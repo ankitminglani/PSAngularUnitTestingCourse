@@ -11,7 +11,7 @@ describe("HerosComponent Shallow Test", () => {
 
     let fixture: ComponentFixture<HeroesComponent>;
     let mockHeroService;
-    let HEROS: Hero[] = [];
+    let HEROS: Hero[] ;
 
 
     /******
@@ -31,6 +31,7 @@ describe("HerosComponent Shallow Test", () => {
 
     beforeEach(() => {
 
+        HEROS = [];
         let h1: Hero = new Hero();
         h1.id = 1;
         h1.name = 'hero1';
